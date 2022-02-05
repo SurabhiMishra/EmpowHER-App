@@ -28,7 +28,7 @@ Widget _buildContents(BuildContext context) {
   return SingleChildScrollView(
     child: Column(
       children: [
-        SizedBox(height: getProportionateScreenHeight(20)),
+        SizedBox(height: getProportionateScreenHeight(40)),
         HomeHeader(),
         Container(
           // height: 90,

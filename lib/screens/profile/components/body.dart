@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/screens/splash/splash_screen.dart';
 
 import 'profile_menu.dart';
 import 'profile_pic.dart';
@@ -35,7 +36,7 @@ class Body extends StatelessWidget {
           ProfileMenu(
             text: "Log Out",
             icon: "assets/icons/Log out.svg",
-            press: () {},
+            press: () => Navigator.pushNamed(context, SplashScreen.routeName),
           ),
         ],
       ),

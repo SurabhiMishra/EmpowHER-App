@@ -33,7 +33,7 @@ Widget _buildContents(BuildContext context) {
         Container(
           // height: 90,
           width: double.infinity,
-          margin: EdgeInsets.all(getProportionateScreenWidth(20)),
+          margin: EdgeInsets.all(getProportionateScreenWidth(40)),
           padding: EdgeInsets.symmetric(
             horizontal: getProportionateScreenWidth(20),
             vertical: getProportionateScreenWidth(15),

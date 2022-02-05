@@ -47,17 +47,17 @@ class CustomBottomNavBar extends StatelessWidget {
                   color: MenuState.home == selectedMenu
                       ? Colors.white
                       : Colors.black,
-                  height: 20,
-                  width: 20,
+                  height: 22,
+                  width: 22,
                 ),
                 onPressed: () =>
                     Navigator.pushNamed(context, HomeScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Star Icon.svg",
+                icon: SvgPicture.asset("assets/icons/book.svg",
                     color: MenuState.resources == selectedMenu
                         ? Colors.white
-                        : Colors.black,height: 18,width: 18,),
+                        : Colors.black,height: 24,width: 24,),
 
                 onPressed: () =>
                     Navigator.pushNamed(context, ResourcesScreen.routeName),
@@ -71,10 +71,10 @@ class CustomBottomNavBar extends StatelessWidget {
                     Navigator.pushNamed(context, MentorScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/book.svg",
+                icon: SvgPicture.asset("assets/icons/feather.svg",
                     color: MenuState.story == selectedMenu
                         ? Colors.white
-                        : Colors.black,height: 22,width: 22,),
+                        : Colors.black,height: 25,width: 25,),
                 onPressed: () =>
                     Navigator.pushNamed(context, StoryScreen.routeName),
               ),
