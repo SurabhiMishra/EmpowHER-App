@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../../size_config.dart';
 
-class DiscountBanner extends StatelessWidget {
-  const DiscountBanner({
+class HomeBanner extends StatelessWidget {
+  const HomeBanner({
     Key? key,
   }) : super(key: key);
 
@@ -21,20 +21,26 @@ class DiscountBanner extends StatelessWidget {
         color: Color(0xFF800080),
         borderRadius: BorderRadius.circular(20),
       ),
-      child: Text.rich(
-        TextSpan(
-          style: TextStyle(color: Colors.white),
-          children: [
-            TextSpan(text: "                           welcome to \n"),
-            TextSpan(
-              text: "          EmpowerHER",
-              style: TextStyle(
-                fontSize: getProportionateScreenWidth(24),
-                fontWeight: FontWeight.bold,
-              ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            "welcome to",
+            style: TextStyle(
+              color: Colors.white,
+              fontWeight: FontWeight.bold,
             ),
-          ],
-        ),
+          ),
+          Text(
+            "EmpowerHER",
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: getProportionateScreenWidth(24),
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+        ],
       ),
     );
   }

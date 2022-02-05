@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:shop_app/resources/resources_screen.dart';
 import 'package:shop_app/screens/home/home_screen.dart';
+import 'package:shop_app/screens/mentor/mentor_screen.dart';
 import 'package:shop_app/screens/profile/profile_screen.dart';
+import 'package:shop_app/story/story_screen.dart';
 
 import '../constants.dart';
 import '../enums.dart';
@@ -40,28 +43,47 @@ class CustomBottomNavBar extends StatelessWidget {
             children: [
               IconButton(
                 icon: SvgPicture.asset(
-                  "assets/icons/Shop Icon.svg",
+                  "assets/icons/home.svg",
                   color: MenuState.home == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
+                      ? Colors.white
+                      : Colors.black,
+                  height: 20,
+                  width: 20,
                 ),
                 onPressed: () =>
                     Navigator.pushNamed(context, HomeScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Heart Icon.svg"),
-                onPressed: () {},
+                icon: SvgPicture.asset("assets/icons/Star Icon.svg",
+                    color: MenuState.resources == selectedMenu
+                        ? Colors.white
+                        : Colors.black,height: 18,width: 18,),
+
+                onPressed: () =>
+                    Navigator.pushNamed(context, ResourcesScreen.routeName),
               ),
               IconButton(
-                icon: SvgPicture.asset("assets/icons/Chat bubble Icon.svg"),
-                onPressed: () {},
+                icon: SvgPicture.asset("assets/icons/Question mark.svg",
+                    color: MenuState.mentor == selectedMenu
+                        ? Colors.white
+                        : Colors.black),
+                onPressed: () =>
+                    Navigator.pushNamed(context, MentorScreen.routeName),
+              ),
+              IconButton(
+                icon: SvgPicture.asset("assets/icons/book.svg",
+                    color: MenuState.story == selectedMenu
+                        ? Colors.white
+                        : Colors.black,height: 22,width: 22,),
+                onPressed: () =>
+                    Navigator.pushNamed(context, StoryScreen.routeName),
               ),
               IconButton(
                 icon: SvgPicture.asset(
                   "assets/icons/User Icon.svg",
                   color: MenuState.profile == selectedMenu
-                      ? kPrimaryColor
-                      : inActiveIconColor,
+                      ? Colors.white
+                      : Colors.black,
                 ),
                 onPressed: () =>
                     Navigator.pushNamed(context, ProfileScreen.routeName),
