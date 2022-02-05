@@ -4,11 +4,12 @@ class Opportunities{
     required this.name,
     required this.url,
     required this.deadline,
+    required this.eligibility,
 }
       );
 
   String? name;
   String? url;
   String? deadline;
-
+  String eligibility;
 }
