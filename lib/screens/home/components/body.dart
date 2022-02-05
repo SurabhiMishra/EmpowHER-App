@@ -18,6 +18,7 @@ class Body extends StatelessWidget {
             HomeHeader(),
             
             DiscountBanner(),
+
           
           ],
         ),
