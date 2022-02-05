@@ -28,12 +28,12 @@ Widget _buildContents(BuildContext context) {
   return SingleChildScrollView(
     child: Column(
       children: [
-        SizedBox(height: getProportionateScreenHeight(20)),
+        SizedBox(height: getProportionateScreenHeight(40)),
         HomeHeader(),
         Container(
           // height: 90,
           width: double.infinity,
-          margin: EdgeInsets.all(getProportionateScreenWidth(40)),
+          margin: EdgeInsets.all(getProportionateScreenWidth(20)),
           padding: EdgeInsets.symmetric(
             horizontal: getProportionateScreenWidth(20),
             vertical: getProportionateScreenWidth(15),
