@@ -13,7 +13,7 @@ class JobListTile extends StatelessWidget {
     return ListTile(
       // tileColor: report.isPothole? Colors.greenAccent:Colors.redAccent,
       title: Text("${oppor.name}"),
-      subtitle: Text('Deadline - ${oppor.deadline}'),
+      subtitle: Text('Deadline - ${oppor.deadline}\n Eligibility - a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023'),
       trailing: Icon(Icons.chevron_right, color: Colors.black,),
       onTap: ()=> _launchURL(oppor.url),
     );
