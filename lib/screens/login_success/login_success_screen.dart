@@ -9,9 +9,10 @@ class LoginSuccessScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox(),
-        title: Text("       Login Successful"),
+        title: Text("Login Successful"),
+        centerTitle: true,
       ),
-      body: Body(),
+      body: Center(child: Body()),
     );
   }
 }
