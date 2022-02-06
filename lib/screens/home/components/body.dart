@@ -15,7 +15,7 @@ List<Opportunities> opporValues = [
       name: "GHC Scholarships",
       url: "https://ghc.anitab.org/attend/scholarships/",
       eligibility:
-          "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+          "A full-time student in an accredited university degree at the time of the celebration sept 22,2022",
       deadline: "30 March"),
   Opportunities(
     name: "British Council scholarships for women in STEM",
@@ -23,15 +23,15 @@ List<Opportunities> opporValues = [
         "https://www.britishcouncil.org/study-work-abroad/in-uk/scholarship-women-stem?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVNpqjm1_vE8RAd8EUoAN9qLr5yy7KDB6zMM8FQ2Y5OyV0ux2ZNQ0UaAuWxEALw_wcB&gclsrc=aw.ds",
     deadline: "14 Feb",
     eligibility:
-        "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+        "A woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
   ),
   Opportunities(
-    name: "British Council scholarships for women in STEM",
+    name: "Women Techmakers",
     url:
-        "https://www.britishcouncil.org/study-work-abroad/in-uk/scholarship-women-stem?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVNpqjm1_vE8RAd8EUoAN9qLr5yy7KDB6zMM8FQ2Y5OyV0ux2ZNQ0UaAuWxEALw_wcB&gclsrc=aw.ds",
+        "https://www.womentechmakers.com/",
     deadline: "14 Feb",
     eligibility:
-        "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+        "A woman persuing BTech in CS or related fields and in the batch of 2023 or 2024",
   ),
 ];
 
