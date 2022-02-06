@@ -33,7 +33,7 @@ class HomeBanner extends StatelessWidget {
             ),
           ),
           Text(
-            "EmpowerHER",
+            "EmpowHER",
             style: TextStyle(
               color: Colors.white,
               fontSize: getProportionateScreenWidth(24),

@@ -38,6 +38,7 @@ class ListItemBuilder<T> extends StatelessWidget {
 
   Widget _buildList(List<T>? items) {
     return ListView.separated(
+      physics: BouncingScrollPhysics(),
       separatorBuilder: (context,index)=> Divider(height: 0.5),
       itemCount: items!=null? items.length+2: 0,
       itemBuilder: (context,index){

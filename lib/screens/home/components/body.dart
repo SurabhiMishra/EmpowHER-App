@@ -15,22 +15,20 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: [
-            SizedBox(height: getProportionateScreenHeight(20)),
-            HomeHeader(),
-            HomeBanner(),
-            _buildContent(context),
-          ],
-        ),
+      child: Column(
+        children: [
+          SizedBox(height: getProportionateScreenHeight(20)),
+          HomeHeader(),
+          HomeBanner(),
+          _buildContent(context),
+        ],
       ),
     );
   }
 
   Widget _buildContent(BuildContext context) {
     return Container(
-      height: 700,
+      height: 450,
       margin: EdgeInsets.all(getProportionateScreenWidth(20)),
       child: StreamBuilder<List<Opportunities>>(
         stream: opporStream(),
@@ -38,15 +36,9 @@ class Body extends StatelessWidget {
           return ListItemBuilder<Opportunities>(
             snapshot: snapshot,
             itemBuilder: (context, oppor) =>
-                Dismissible(
-                  key: Key('oppor-${oppor.url}'),
-                  background: Container(color: Colors.red),
-                  // direction: DismissDirection.endToStart,
-                  // onDismissed: (direction) => _delete(context, report),
-                  child: JobListTile(
-                    oppor: oppor,
-                    // onTap: () => _showReport(context,report),
-                  ),
+                JobListTile(
+                  oppor: oppor,
+                  // onTap: () => _showReport(context,report),
                 ),
           );
         },
@@ -66,6 +58,18 @@ class Body extends StatelessWidget {
             name: "British Council scholarships for women in STEM",
             url: "https://www.britishcouncil.org/study-work-abroad/in-uk/scholarship-women-stem?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVNpqjm1_vE8RAd8EUoAN9qLr5yy7KDB6zMM8FQ2Y5OyV0ux2ZNQ0UaAuWxEALw_wcB&gclsrc=aw.ds",
             deadline: "14 Feb",
+          eligibility: "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+        ),
+        Opportunities(
+          name: "British Council scholarships for women in STEM",
+          url: "https://www.britishcouncil.org/study-work-abroad/in-uk/scholarship-women-stem?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVNpqjm1_vE8RAd8EUoAN9qLr5yy7KDB6zMM8FQ2Y5OyV0ux2ZNQ0UaAuWxEALw_wcB&gclsrc=aw.ds",
+          deadline: "14 Feb",
+          eligibility: "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+        ),
+        Opportunities(
+          name: "British Council scholarships for women in STEM",
+          url: "https://www.britishcouncil.org/study-work-abroad/in-uk/scholarship-women-stem?gclid=Cj0KCQiA3fiPBhCCARIsAFQ8QzVNpqjm1_vE8RAd8EUoAN9qLr5yy7KDB6zMM8FQ2Y5OyV0ux2ZNQ0UaAuWxEALw_wcB&gclsrc=aw.ds",
+          deadline: "14 Feb",
           eligibility: "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
         ),
       ]
