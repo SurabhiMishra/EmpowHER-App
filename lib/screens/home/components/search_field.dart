@@ -19,13 +19,17 @@ class SearchField extends StatelessWidget {
       child: TextField(
         onChanged: (value) => print(value),
         decoration: InputDecoration(
+            prefixIcon: Icon(
+              Icons.search,
+              color: kPrimaryColor,
+            ),
             contentPadding: EdgeInsets.symmetric(
                 horizontal: getProportionateScreenWidth(20),
-                vertical: getProportionateScreenWidth(9)),
+                vertical: getProportionateScreenWidth(11)),
             border: InputBorder.none,
             focusedBorder: InputBorder.none,
             enabledBorder: InputBorder.none,
-            hintText: "Current Points:60",
+            hintText: "Search ...",
             ),
       ),
     );

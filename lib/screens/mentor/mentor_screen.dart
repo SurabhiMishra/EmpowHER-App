@@ -8,21 +8,34 @@ import 'package:shop_app/screens/mentor/mentor.dart';
 import 'package:shop_app/screens/mentor/mentor_list_tile.dart';
 import 'package:shop_app/size_config.dart';
 
-
 List<Mentor> mentorValues = [
   Mentor(
-      name: "Jashanjot Singh",
-      organization: "Amex",
-      specialization: "App Development",
-      image:"assets/images/jashan.png",
-      fees: "500",
+    name: "Surabhi Mishra",
+    organization: "Bloomberg (SDE || Exp: 4 years)",
+    specialization: "App Development",
+    image: "assets/images/bunny.png",
+    fees: "80",
   ),
   Mentor(
     name: "Garvita Gulati",
-    organization: "Salesforce",
+    organization: "Salesforce (SDE 2 || Exp: 5 years)",
     specialization: "App Development, Django Developer",
-    image:"assets/images/garvita.jpg",
-    fees: "690",
+    image: "assets/images/garvita.jpg",
+    fees: "65",
+  ),
+  Mentor(
+    name: "Jennifer Lownes",
+    organization: "Google (Product Manager)",
+    specialization: "Agile Software Development, Team Management",
+    image: "assets/images/profile.png",
+    fees: "45",
+  ),
+  Mentor(
+    name: "Rouchelle Luang",
+    organization: "Samsung (SDE 3 || Exp: 7 years)",
+    specialization: "Pipelining and DevOps",
+    image: "assets/images/profile2.jpg",
+    fees: "45",
   ),
 ];
 
@@ -65,7 +78,7 @@ Widget _buildContents(BuildContext context) {
           ),
           child: Center(
             child: Text(
-              "A Safespace",
+              "We're here to help",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: getProportionateScreenWidth(24),
@@ -101,7 +114,10 @@ Widget _buildContents(BuildContext context) {
                   child: FloatingActionButton(
                     backgroundColor: kPrimaryColor,
                     onPressed: () {},
-                    child: Icon(Icons.live_help_outlined,size: 25,),
+                    child: Icon(
+                      Icons.live_help_outlined,
+                      size: 25,
+                    ),
                   ),
                 ),
               ),
