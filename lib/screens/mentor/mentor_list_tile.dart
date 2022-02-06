@@ -47,13 +47,16 @@ class MentorListTile extends StatelessWidget {
               height: 10,
             ),
             Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   "Organization: ",
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
-                Text(
-                  "${mentor.organization}",
+                Flexible(
+                  child: Text(
+                    "${mentor.organization}",
+                  ),
                 ),
               ],
             ),
@@ -103,7 +106,8 @@ class MentorListTile extends StatelessWidget {
                         content: SingleChildScrollView(
                           child: ListBody(
                             children: const <Widget>[
-                              Text('The mentor will approve your request soon.\n\nPlease make sure you have enabled notifications.'),
+                              Text(
+                                  'The mentor will approve your request soon.\n\nPlease make sure you have enabled notifications.'),
                             ],
                           ),
                         ),

@@ -64,7 +64,7 @@ class AddOpportunity extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         labelText: 'Name',
-        hintText: 'Madonna',
+        hintText: 'APAC scholarship',
         labelStyle: TextStyle(
           color: Colors.black,
         ),
@@ -85,7 +85,7 @@ class AddOpportunity extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         labelText: 'URL',
-        hintText: 'abc.com',
+        hintText: 'apac.com',
         labelStyle: TextStyle(
           color: Colors.black,
         ),

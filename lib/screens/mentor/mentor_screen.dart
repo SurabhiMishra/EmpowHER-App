@@ -11,14 +11,14 @@ import 'package:shop_app/size_config.dart';
 List<Mentor> mentorValues = [
   Mentor(
     name: "Surabhi Mishra",
-    organization: "Bloomberg (SDE || Exp: 4 years)",
+    organization: "Bloomberg\n(SDE || Exp: 4 years)",
     specialization: "App Development",
     image: "assets/images/bunny.png",
     fees: "80",
   ),
   Mentor(
     name: "Garvita Gulati",
-    organization: "Salesforce (SDE 2 || Exp: 5 years)",
+    organization: "Salesforce\n(SDE 2 || Exp: 5 years)",
     specialization: "App Development, Django Developer",
     image: "assets/images/garvita.jpg",
     fees: "65",
@@ -32,7 +32,7 @@ List<Mentor> mentorValues = [
   ),
   Mentor(
     name: "Rouchelle Luang",
-    organization: "Samsung (SDE 3 || Exp: 7 years)",
+    organization: "Samsung\n(SDE 3 || Exp: 7 years)",
     specialization: "Pipelining and DevOps",
     image: "assets/images/profile2.jpg",
     fees: "45",

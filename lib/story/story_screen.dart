@@ -12,10 +12,10 @@ import 'package:shop_app/story/components/stories.dart';
 List<Stories> storyValues = [
   Stories(
       name: "My job interview",
-      company: "Amazin",
+      company: "Amazon",
       by: " Anonymous  ",
       story:
-          "I faced harassement from my boss on the day of my interview.I was ready to ace it. I thought I was prepared well enough but I was wrong.I wasn;t prepared for what was coming next....\n(click to read more)",
+          "I faced harassment from my boss on the day of my interview.I was ready to ace it. I thought I was prepared well enough but I was wrong.I wasn't prepared for what was coming next....\n(click to read more)",
       upvotes: 8,
       downvotes: 3,
       tags: "#sexism "),
@@ -24,7 +24,7 @@ List<Stories> storyValues = [
       company: "Mestik",
       by: "Surabhi Mishra  ",
       story:
-          "It was the first day at work. I was excitied for the day.I greeted everyone and sat on my table. Just then I got a call from the boss....(click to read more)",
+          "It was the first day at work. I was excited for the day.I greeted everyone and sat on my table. Just then I got a call from the boss....(click to read more)",
       upvotes: 12,
       downvotes: 1,
       tags: "#workculture  "),
@@ -78,7 +78,7 @@ Widget _buildContents(BuildContext context) {
           ),
           child: Center(
             child: Text(
-              "A Safespace",
+              "A Safe-space",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: getProportionateScreenWidth(24),

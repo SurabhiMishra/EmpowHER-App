@@ -32,7 +32,7 @@ List<Resources> resValues = [
   Resources(
     name: "DSA Course Python",
     url: "https://www.youtube.com/watch?v=pkYVOmU3MgA&t=30486s",
-    description: "It is very rare to find gpod DSA resource in Python language.This is a great course.",
+    description: "It is very rare to find good DSA resource in Python language.This is a great course.",
       uploadedBy: "Anushka Prasad"
   ),
   Resources(
@@ -56,7 +56,6 @@ class _ResourcesScreenState extends State<ResourcesScreen> {
       body: _buildContents(context),
       bottomNavigationBar: CustomBottomNavBar(selectedMenu: MenuState.resources),
     );
-    ;
   }
 }
 
@@ -100,8 +99,8 @@ Widget _buildContents(BuildContext context) {
 
 Widget _buildContent(BuildContext context) {
   return Container(
-    height: 450,
-    margin: EdgeInsets.all(getProportionateScreenWidth(20)),
+    height: 490,
+    margin: EdgeInsets.fromLTRB(getProportionateScreenWidth(20),0,getProportionateScreenWidth(20),0),
     child: Stack(children: [
       StreamBuilder<List<Resources>>(
         stream: resStream(),

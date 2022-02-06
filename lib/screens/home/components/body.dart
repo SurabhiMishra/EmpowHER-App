@@ -31,7 +31,7 @@ List<Opportunities> opporValues = [
         "https://www.womentechmakers.com/",
     deadline: "14 Feb",
     eligibility:
-        "A woman persuing BTech in CS or related fields and in the batch of 2023 or 2024",
+        "A woman pursuing BTech in CS or related fields and in the batch of 2023 or 2024",
   ),
 ];
 
