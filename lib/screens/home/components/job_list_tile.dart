@@ -33,7 +33,7 @@ class JobListTile extends StatelessWidget {
                 Text('Eligibility - '),
                 Flexible(
                     child: Text(
-                        'a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023')),
+                        oppor.eligibility)),
               ],
             ),
             SizedBox(height: 10),
