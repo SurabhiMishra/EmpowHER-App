@@ -16,7 +16,7 @@ class ResourceListTile extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(0, 0, 0, 20),
       child: ListTile(
-        leading: Icon(Icons.chevron_right_outlined),
+        trailing: Icon(Icons.chevron_right_outlined),
         shape:
             RoundedRectangleBorder(borderRadius: BorderRadius.circular(20.0)),
         tileColor: kSecondaryColor.withOpacity(0.1),

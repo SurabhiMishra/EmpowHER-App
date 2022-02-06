@@ -67,7 +67,7 @@ class AddResource extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         labelText: 'Name',
-        hintText: 'Madonna',
+        hintText: 'Web Development in 180 days',
         labelStyle: TextStyle(
           color: Colors.black,
         ),
@@ -109,7 +109,7 @@ class AddResource extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         labelText: 'Description',
-        hintText: 'xyz',
+        hintText: 'a great course for beginners in web development',
         labelStyle: TextStyle(
           color: Colors.black,
         ),
@@ -130,7 +130,7 @@ class AddResource extends StatelessWidget {
     return TextField(
       decoration: InputDecoration(
         labelText: 'uploadedBy',
-        hintText: 'abc',
+        hintText: 'Garvita Gulati',
         labelStyle: TextStyle(
           color: Colors.black,
         ),
