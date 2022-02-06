@@ -12,22 +12,34 @@ import 'package:shop_app/size_config.dart';
 
 List<Resources> resValues = [
   Resources(
-      name: "GHC Scholarships",
-      url: "https://ghc.anitab.org/attend/scholarships/",
-    description: "des",
-    uploadedBy: "xyz"
+      name: "Recommended Flutter course",
+      url: "https://www.udemy.com/course/flutter-bootcamp-with-dart/",
+    description: "This is a flutter course I used and found really helpful.I could easily make a project after doing this.",
+    uploadedBy: "Archi Somani"
       ),
   Resources(
-    name: "GHC Scholarships",
-    url: "https://ghc.anitab.org/attend/scholarships/",
-    description: "des",
-      uploadedBy: "xyz"
+    name: "Good DSA practice questions",
+    url: "https://docs.google.com/spreadsheets/d/1-wKcV99KtO91dXdPkwmXGTdtyxAfk1mbPXQg81R9sFE/edit#gid=0",
+    description: "This sheet has important Leetcode questions from all DSA Topics to practice regularly",
+      uploadedBy: "Priya Singh"
   ),
   Resources(
-    name: "GHC Scholarships",
-    url: "https://ghc.anitab.org/attend/scholarships/",
-    description: "des",
-      uploadedBy: "xyz"
+    name: "Good Django Playlist",
+    url: "https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p",
+    description: "Here's a free resource to get started with learning Django.",
+      uploadedBy: "Mahima Kulshreshta"
+  ),
+  Resources(
+    name: "DSA Course Python",
+    url: "https://www.youtube.com/watch?v=pkYVOmU3MgA&t=30486s",
+    description: "It is very rare to find gpod DSA resource in Python language.This is a great course.",
+      uploadedBy: "Anushka Prasad"
+  ),
+  Resources(
+    name: "Interview Preparation",
+    url: "https://takeuforward.org/interviews/must-do-questions-for-dbms-cn-os-interviews-sde-core-sheet/",
+    description: "This sheet by Striver(youtuber) came in very handy to me while preparing for interviews",
+      uploadedBy: "Garvita"
   ),
 ];
 class ResourcesScreen extends StatefulWidget {
