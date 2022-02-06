@@ -1,4 +1,5 @@
 import 'package:flutter/widgets.dart';
+import 'package:shop_app/resources/add_resource.dart';
 import 'package:shop_app/resources/resources_screen.dart';
 import 'package:shop_app/screens/cart/cart_screen.dart';
 import 'package:shop_app/screens/complete_profile/complete_profile_screen.dart';
@@ -34,4 +35,5 @@ final Map<String, WidgetBuilder> routes = {
   ResourcesScreen.routeName: (context) => ResourcesScreen(),
   StoryScreen.routeName: (context) => StoryScreen(),
   AddOpportunity.routeName : (context) => AddOpportunity(),
+  AddResource.routeName : (context) => AddResource(),
 };
