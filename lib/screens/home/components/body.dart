@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shop_app/screens/home/components/add_opportunity.dart';
 import 'package:shop_app/screens/home/components/job_list_tile.dart';
 import 'package:shop_app/screens/home/components/list_item_builder.dart';
 import 'package:shop_app/screens/home/components/opportunities.dart';
@@ -70,4 +71,8 @@ class Body extends StatelessWidget {
       ]
     );
   }
+
+
+
+
 }

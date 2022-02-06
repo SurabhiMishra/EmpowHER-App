@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shop_app/components/custom_bottom_nav_bar.dart';
 import 'package:shop_app/enums.dart';
+import 'package:shop_app/screens/home/components/add_opportunity.dart';
 import 'package:shop_app/screens/home/components/home_header.dart';
 import 'package:shop_app/size_config.dart';
 
@@ -25,6 +26,7 @@ class _ResourcesScreenState extends State<ResourcesScreen> {
 }
 
 Widget _buildContents(BuildContext context) {
+
   return SingleChildScrollView(
     child: Column(
       children: [
@@ -53,7 +55,9 @@ Widget _buildContents(BuildContext context) {
                   ),
                 ),
               ),
+
         ),
+
       ],
     ),
   );
