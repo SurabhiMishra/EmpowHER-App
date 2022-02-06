@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-class Opportunities{
+
+class Opportunities {
   Opportunities({
     required this.name,
     required this.url,
     required this.deadline,
     required this.eligibility,
-}
-      );
+  });
 
   String? name;
   String? url;
