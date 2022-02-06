@@ -11,32 +11,32 @@ import 'package:shop_app/story/components/stories.dart';
 
 List<Stories> opporValues = [
   Stories(
-      name: "My First Day at Work",
-      company: "Amazon",
-      by: "Surabhi Mishra",
+      name: "My job interview",
+      company: "Amazin",
+      by: " Anonymous  ",
       story:
-          "A woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023 lorem ipsum lorem ipsum ..........",
+          "I faced harassement from my boss on the day of my interview.I was ready to ace it. I thought I was prepared well enough but I was wrong.I wasn;t prepared for what was coming next....\n(click to read more)",
       upvotes: 8,
       downvotes: 3,
-      tags: "#WorkCulture"),
+      tags: "#sexism "),
   Stories(
-      name: "Horrifying Boss",
-      company: "Staging Company",
-      by: "Surabhi Mishra",
+      name: "My first day at work",
+      company: "Mestik",
+      by: "Surabhi Mishra  ",
       story:
-          "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+          "It was the first day at work. I was excitied for the day.I greeted everyone and sat on my table. Just then I got a call from the boss....(click to read more)",
       upvotes: 12,
       downvotes: 1,
-      tags: "#Harrasment"),
+      tags: "#workculture  "),
   Stories(
-      name: "Are our countrymen really growing?",
-      company: "Bad Company",
-      by: "Surabhi Mishra",
+      name: "Sexism at Class",
+      company: "ABC college",
+      by: "Garvita Gulati",
       story:
-          "a woman pursuing a degree in a STEM subject at a leading UK university for the academic year 2022-2023",
+          "One of my professors in his first class, asked us about our talents and hobbies.When it was my turn, I told him about my coding knowledge. Instead of being appreciative, what he remarked after that, shook me to the core....\n(click to read more)",
       upvotes: 14,
       downvotes: 1,
-      tags: "#GenderInequality"),
+      tags: "#GenderInequality "),
 ];
 
 class StoryScreen extends StatefulWidget {
@@ -78,7 +78,7 @@ Widget _buildContents(BuildContext context) {
           ),
           child: Center(
             child: Text(
-              "From the Employees",
+              "A Safespace",
               style: TextStyle(
                 color: Colors.white,
                 fontSize: getProportionateScreenWidth(24),
