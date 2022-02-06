@@ -58,7 +58,7 @@ class AddStory extends StatelessWidget {
   }
 
   void _submit(BuildContext context) {
-    opporValues.add(Stories(
+    storyValues.add(Stories(
         name: _nameController.text,
         story: _storyController.text,
         by: _byController.text,

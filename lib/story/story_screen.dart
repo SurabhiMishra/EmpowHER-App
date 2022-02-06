@@ -9,7 +9,7 @@ import 'package:shop_app/story/components/story_list_tile.dart';
 import 'package:shop_app/screens/home/components/list_item_builder.dart';
 import 'package:shop_app/story/components/stories.dart';
 
-List<Stories> opporValues = [
+List<Stories> storyValues = [
   Stories(
       name: "My job interview",
       company: "Amazin",
@@ -88,16 +88,16 @@ Widget _buildContents(BuildContext context) {
           ),
         ),
         Container(
-          height: 450,
-          margin: EdgeInsets.all(getProportionateScreenWidth(20)),
+          height: 490,
+          margin: EdgeInsets.fromLTRB(getProportionateScreenWidth(20),0,getProportionateScreenWidth(20),0),
           child: Stack(children: [
             StreamBuilder<List<Stories>>(
-              stream: opporStream(),
+              stream: storyStream(),
               builder: (context, snapshot) {
                 return ListItemBuilder<Stories>(
                   snapshot: snapshot,
                   itemBuilder: (context, oppor) => StoryListTile(
-                    oppor: oppor,
+                    story: oppor,
                     // onTap: () => _showReport(context,report),
                   ),
                 );
@@ -126,6 +126,6 @@ Widget _buildContents(BuildContext context) {
   );
 }
 
-Stream<List<Stories>> opporStream() {
-  return Stream.value(opporValues);
+Stream<List<Stories>> storyStream() {
+  return Stream.value(storyValues);
 }
