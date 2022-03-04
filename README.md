@@ -6,7 +6,7 @@
   <p align="center">
     A cross-platform app made using flutter
     <br>
-    An attempt to create the world a better place through technology and promote gender equality.
+    This app is an attempt to create the world a better place through technology and promote gender equality.
     <br>
     <br>
     <a href="https://github.com/SurabhiMishra/EmpowHER-App/issues/new">Report bug</a>
